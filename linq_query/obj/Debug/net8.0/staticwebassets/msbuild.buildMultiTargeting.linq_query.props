@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/linq_query.props" />
+</Project>

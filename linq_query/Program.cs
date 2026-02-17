@@ -1,5 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using linq_query.Models;
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<LinqQueryContext>(options => 
+options.UseMySql(
+    builder.Configuration.GetConnectionString("DefaultConnection"),
+new MySqlServerVersion(new Version(8, 0, 31))
+));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

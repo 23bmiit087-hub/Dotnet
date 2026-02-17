@@ -132,3 +132,4 @@
 /home/student/Documents/202307100110087/Database_Conn_087/obj/Debug/net8.0/Database_Conn_087.pdb
 /home/student/Documents/202307100110087/Database_Conn_087/obj/Debug/net8.0/Database_Conn_087.genruntimeconfig.cache
 /home/student/Documents/202307100110087/Database_Conn_087/obj/Debug/net8.0/ref/Database_Conn_087.dll
+/home/student/Documents/202307100110087/Database_Conn_087/obj/Debug/net8.0/Database_Conn_087.sourcelink.json

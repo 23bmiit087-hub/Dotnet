@@ -37,7 +37,7 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Display(Student student , String search)
     {
-        var students = dbc.Students.Where(s=>s.Name.Contains(search)).ToList();
+        var students =  dbc.Students.Where(s=>s.Name.Contains(search)).ToList();
         return View(students);
     }
     
