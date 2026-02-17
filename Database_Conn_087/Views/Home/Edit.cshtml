@@ -1,0 +1,20 @@
+@model Database_Conn_087.Models.Student;
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form asp-action="Edit" method="post">
+    <label asp-for="@Model.Name"></label>
+    <input asp-for="@Model.Name" />
+    <br />
+
+    <label asp-for="@Model.Email"></label>
+    <input asp-for="@Model.Email" />
+    <br />
+
+    <label asp-for="@Model.Division"></label>
+    <input asp-for="@Model.Division" />
+    <br />
+    <input type="submit" value="Edit Student" />
+</form>
+

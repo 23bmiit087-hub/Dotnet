@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Sub";
+}
+
+<p>Number 1 :~ @ViewData["Num1"]</p>
+<p>Number 2 :~ @ViewData["Num2"]</p>
+
+@{
+    if((int)@ViewData["Num1"]>(int)@ViewData["Num2"]){
+        <p>Subtraction :~ @((int)@ViewData["Num1"]-(int)@ViewData["Num2"])</p>
+    }
+    else{
+        <p>Subtraction :~ @((int)@ViewData["Num2"]-(int)@ViewData["Num1"])</p>
+    }
+}

@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method='post'>
+    Number 1:~ <input type="number" min=0 max=10000 name='Num1' />
+    Number 2:~ <input type="number" min=0 max=10000 name='Num2' />
+    <input type='submit' asp-action='Add' value='+'>
+    <input type='submit' asp-action='Sub' value='-'>
+    <input type='submit' asp-action='Mul' value='*'>
+    <input type='submit' asp-action='Div' value='/'>
+</form>

@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Display";
+}
+
+@{
+    int nop=Model.NoofParticipants;
+    string category=@Model.Category.ToString();
+    int fees=500;
+    int total_fee=nop*fees;
+
+    if(category=="Student"){
+        total_fee=total_fee-(total_fee*20/100);
+    }
+    else if(category=="Faculty"){
+        total_fee=total_fee-(total_fee*10/100);
+    }
+
+    if(nop>5){
+        total_fee = total_fee-(total_fee*5/100);
+    }
+}
+
+<table>
+    <tr>
+        <td>No Of Participants:</td>
+        <td>@nop</td>
+    </tr>
+    <tr>
+        <td>Category:</td>
+        <td>@category</td>
+    </tr>
+    <tr>
+        <td>Total Fees:</td>
+        <td>@total_fee</td>
+    </tr>
+</table>

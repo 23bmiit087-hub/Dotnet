@@ -1,0 +1,27 @@
+@model IEnumerable<Database_Conn_087.Models.Student>;
+@{
+    ViewData["Title"] = "Display";
+}
+
+<form asp-action="Display" method="post">
+    <input type="search" id="search"/>
+    <input type="submit" value="Search" />
+</form>
+
+<table border=1 cellpadding=10>
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Division</td>
+    </tr>
+
+    @foreach(var Students in Model){
+    <tr>
+        <td>@Students.Name</td>
+        <td>@Students.Email</td>
+        <td>@Students.Division</td>
+        <td><a asp-action="Edit" asp-route-id="@Students.Id">Edit</a></td>
+        <td><a asp-action="Delete" asp-route-id="@Students.Id">Delete</a></td>
+    </tr>
+    }
+</table>

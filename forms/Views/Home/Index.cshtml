@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Redirection Form HEHE</h1>
+
+<form method="POST" name="form1" asp-action="Display">
+    Name:~ <input type="text" name="txtName" placeholder="--Enter your Name--">
+    <br>
+    Email:~ <input type="Email" name="txtEmail" placeholder="--Enter your Email--">
+    <br>
+    Phone No.:~ <input type="tel" name="txtPhone" placeholder="--Enter your Phone number--">
+    <br>
+    City:~ <select name="txtCity" required>
+        <option value=''>--Choose a City</option>
+        <option>Surat</option>
+        <option>Ahmedabad</option>
+        <option>Valsad</option>
+    </select>
+    <br>
+    Gender:~ <input type="radio" name="txtGender" value="Male">Male
+    <input type="radio" name="txtGender" value="Female">Female
+    <br>
+    <input type="submit" value="submit">
+</form>

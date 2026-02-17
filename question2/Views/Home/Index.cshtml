@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bakery</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form asp-action="Display">
+    Cake Name:~ <input type="text" name="Cake-Name" placeholder="Please enter the name of the cake" />
+    <br>
+    <br>
+    <input type="submit" value="Generate Bill" />
+</form>

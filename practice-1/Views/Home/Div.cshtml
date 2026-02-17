@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Div";
+}
+
+
+<p>Number 1 :~ @ViewData["Num1"]</p>
+<p>Number 2 :~ @ViewData["Num2"]</p>
+
+@{
+    if((int)@ViewData["Num2"]!=0){
+        <p>Division :~ @((int)@ViewData["Num1"]/(int)@ViewData["Num2"])</p>
+    }
+    else{
+        <p>YOUR ANSWER IS "Undefined".</p>
+    }
+}

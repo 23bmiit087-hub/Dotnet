@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Database_Conn_087.props" />
+</Project>

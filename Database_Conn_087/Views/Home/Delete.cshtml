@@ -1,0 +1,26 @@
+@model Database_Conn_087.Models.Student;
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<table>
+    <tr>
+        <td>Id:~ </td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>Name:~ </td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Email:~ </td>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <td>Division:~ </td>
+        <td>@Model.Division</td>
+    </tr>
+</table>
+<form asp-action="Delete" method="post">
+    <input type="submit" value="Delete Student" />    
+</form>

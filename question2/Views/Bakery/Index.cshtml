@@ -1,0 +1,22 @@
+@model question2.Models.BillGenerator;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 align="center">Bill Generation Platform</h1>
+
+<form asp-controller="Bakery" asp-action="Display" method="post">
+    <label asp-for="Name">Name:~ </label>
+    <input asp-for="Name" />
+    <br />
+
+    <label asp-for="Price">Price:~ </label>
+    <input asp-for="Price" />
+    <br />
+
+    <label asp-for="Quantity">Quantity:~ </label>
+    <input asp-for="Quantity" />
+    <br />
+    
+    <input type="Submit" value="Generate Bill" />
+</form>

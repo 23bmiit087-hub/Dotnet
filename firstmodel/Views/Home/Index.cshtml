@@ -1,0 +1,10 @@
+﻿@model firstmodel.Models.Student
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="Display" asp-controller="Home">
+    <label asp-for="@Model.Id">Student Id:~</label>
+    <input asp-for="@Model.Id" />
+    <input type="submit" />
+</form>

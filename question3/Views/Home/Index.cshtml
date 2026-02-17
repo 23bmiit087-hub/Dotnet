@@ -1,0 +1,24 @@
+﻿@model question3.Models.RegistrationForm;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Workshop Registration</h1>
+</div>
+<form asp-action="Display" method="post">
+    
+    <label asp-for="@Model.NoofParticipants">No of Participants :~ </label>
+    <input asp-for="@Model.NoofParticipants" />
+    <br>
+    <br>
+
+    <label asp-for="@Model.Category">Category:~ </label>
+    <select asp-items="Html.GetEnumSelectList<Category>()" asp-for="@Model.Category">
+        <option>--Select Category--</option>
+    </select>
+    <br />
+    <br />
+
+    <input type="submit" value="Register" />
+</form>
